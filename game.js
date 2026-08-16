@@ -1209,7 +1209,7 @@ function gameLoop() {
 
 
     if (
-        obstacleTimer > 105
+        obstacleTimer > 125
     ) {
 
         createObstacle();
