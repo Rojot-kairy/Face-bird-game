@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Bird</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HOME SCREEN ================= -->
+    <div id="homeScreen" class="screen active">
+
+        <div class="homeContent">
+
+            <h1>FACE BIRD</h1>
+
+            <p class="subtitle">Tap. Fly. Survive.</p>
+
+            <button id="startButton">START GAME</button>
+
+            <button id="aboutButton">ABOUT</button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= CHARACTER SCREEN ================= -->
+    <div id="characterScreen" class="screen">
+
+        <div class="characterContent">
+
+            <h2>SELECT YOUR CHARACTER</h2>
+
+            <div class="characters">
+
+                <!-- Default Character -->
+                <div class="characterCard selected" data-character="default">
+                    <div class="characterFace defaultFace">
+    <img src="images/default.png" alt="Default">
+</div>
+
+                    <p>DEFAULT</p>
+
+                    <button class="selectButton">SELECT</button>
+                </div>
+
+
+                <!-- Friend 1 -->
+                <div class="characterCard" data-character="friend1">
+                  <div class="characterFace">
+    <img src="images/friend1.png" alt="Friend 1">
+</div>
+
+                    <p>Bottol</p>
+
+                    <button class="selectButton">SELECT</button>
+                </div>
+
+
+                <!-- Friend 2 -->
+                <div class="characterCard" data-character="friend2">
+                    <div class="characterFace">
+    <img src="images/friend2.png" alt="Friend 2">
+</div>
+
+                    <p>Hokma</p>
+
+                    <button class="selectButton">SELECT</button>
+                </div>
+
+
+                <!-- Friend 3 -->
+                <div class="characterCard" data-character="friend3">
+                    <div class="characterFace">
+    <img src="images/friend3.png" alt="Friend 3">
+</div>
+
+                    <p>Gandu</p>
+
+                    <button class="selectButton">SELECT</button>
+                </div>
+
+            </div>
+
+            <button id="playButton">PLAY</button>
+
+            <button id="backButton">BACK</button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= GAME SCREEN ================= -->
+    <div id="gameScreen" class="screen">
+
+        <div class="gameArea">
+
+            <div id="score">
+                SCORE: 0
+            </div>
+
+            <div id="bird">
+    <img id="birdImage" src="images/default.png" alt="Bird">
+</div>
+
+            <div class="ground"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= ABOUT POPUP ================= -->
+    <div id="aboutPopup" class="popup">
+
+        <div class="popupContent">
+
+            <h2>ABOUT</h2>
+
+<p>
+    We took our friends' faces, put them on a bird,
+    and gave them one simple job:
+</p>
+
+<h3>DON'T HIT THE BLOCK.</h3>
+
+<p>
+    Somehow, even that is difficult.
+</p>
+
+<p>
+    Choose your victim, tap to fly, dodge the blocks
+    and see how long they survive.
+</p>
+
+<p>
+    <strong>Special abilities?</strong><br>
+    No.
+</p>
+
+<p>
+    <strong>Intelligence?</strong><br>
+    Also no.
+</p>
+
+<p>
+    <strong>Different sounds?</strong><br>
+    Unfortunately, yes.
+</p>
+
+<p>
+    <strong>Have fun ruining your friend's high score.</strong>
+</p>
+
+            <button id="closeAbout">CLOSE</button>
+
+        </div>
+
+    </div>
+
+
+    <script src="game.js"></script>
+
+</body>
+</html>
