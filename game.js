@@ -473,11 +473,11 @@ let gapTop = true;
    GAME SETTINGS
 ===================================================== */
 
-const normalSpeed = 3.2;
+const normalSpeed = 2.8;
 
-const mediumSpeed = 3.4;
+const mediumSpeed = 3.0;
 
-const hardSpeed = 3.6;
+const hardSpeed = 3.2;
 
 
 const blockWidth = 52;
